@@ -1,4 +1,19 @@
 
+.nav-logo img {
+    height: 104px;
+    width: 134px;
+}
+.nav-header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    border: 0;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+}
+
 body{
  min-height: 100vh;
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
@@ -21,8 +36,8 @@ div{
     transform: scale(1.1);
 }
 .product-item img{  
-      /* max-height: 200px; */
-    }
+       max-height: 300px; 
+}
     
 .footer-items h5{
     color: white;

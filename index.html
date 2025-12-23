@@ -10,13 +10,15 @@
 </head>
 <body>
  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="nav-header navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">E-shopper</a>
+          <a class="nav-logo" href="/">
+            <img src="images/logo_semfundo.jpg" class="w-100">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               
               <li class="nav-item dropdown">
@@ -30,25 +32,9 @@
                   <li><a class="dropdown-item" href="/#products">Drones</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/cart.html" tabindex="-1">
-                  Cart<i class="bi bi-cart-plus-fill"></i> 
-                  <span class="cart-badge badge bg-success">4</span></a>
-              </li>
+              
             </ul>
-            <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-2 order-sm-last">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="myaccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  My Account
-                </a>
-                <ul class="dropdown-menu bg-dark text-light" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Orders</a></li>
-                  <li><a class="dropdown-item" href="/#" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="/#">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
+    
             <form class="d-flex search-form">
               <input class="form-control" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">
@@ -56,7 +42,7 @@
               </button>
             </form>
            
-          </div>
+          </div> -->
         </div>
       </nav>
       <!-- End of Navigation -->
@@ -69,24 +55,24 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="images/product-2-slider.jpg" class="d-block w-100" alt="...">
+            <img src="images/cabo_balanciado.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h5>Cabo Balanciado ideal para Estúdios,Rádios</h5>
+              <p>Ideal para transmissões ao vivo e gravações profissionais.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/product-3-slider.jpg" class="d-block w-100" alt="...">
+            <img src="images/fita_antiderrapante.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5>Fita Antiderrapante Safety Walk Neon 50mm X 5m</h5>
+              <p>Proporciona segurança em áreas de risco, evitando escorregões e quedas.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/product-6-slider.jpg" class="d-block w-100" alt="...">
+            <img src="images/fita_audio.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <h5>Fita Áudio Mastering</h5>
+              <p>Fita de áudio profissional para gravações de alta qualidade.</p>
             </div>
           </div>
         </div>
@@ -101,131 +87,109 @@
       </div>
 
       <!-- End of Carousel -->
-    <div class="container mb-5">
+    <div class="container">
           <div id="products" class="row">
-              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
-                
+              <div class="col-xl-4 col-lg-4 col-md-6 position-relative">
 
                   <div class="card product-item">
                     <i class="bi bi-heart-fill position-absolute liked"></i>
                     <i class="bi bi-heart position-absolute like"></i>
-                    <img src="images/product-1-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top" title="Click to See Product Details">
+                    <img src="images/aplique_tampa.jpg" class="card-img-top" alt="..." data-bs-toggle="tooltip" data-bs-placement="top">
                     <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted  fw-light">Headphones</h6>
-                      <h5 class="card-title">Sony WX-5</h5>
-                      <p class="card-text price"> $100.75 <span class="float-end rating-stars" >
+                      <h6 class="card-subtitle mb-2 text-muted  fw-light">Corolla 2011/2014 Black P Original Preto (Usado)</h6>
+                      <h5 class="card-title">Aplique Tamp Traseira Toyota Corolla</h5>
+                      <p class="card-text price"> R$230 <span class="float-end rating-stars" >
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                       </span> </p>
                       <div class="text-center">
-                        <a class="btn btn-dark w-100" onclick="showToast()" role="button" > Add To Cart</a>
+                        <a class="btn btn-dark w-100" target="_blank" href="https://www.mercadolivre.com.br/aplique-tamp-tras-toyota-corolla-20112014-black-p-original/up/MLBU3677089722?pdp_filters=item_id:MLB6042457616" role="button" > Abrir Anúncio Mercado Livre</a>
                       </div>
                     </div>
                   </div>
               </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+              <div class="col-xl-4 col-lg-4 col-md-6 position-relative">
                 
                 <div class="card product-item" >
                   <i class="bi bi-heart-fill position-absolute liked"></i>
                 <i class="bi bi-heart position-absolute like"></i>
-                  <img src="images/product-2-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <img src="images/fita_vintage.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">SmartWatch</h6>
-                    <h5 class="card-title">Apple Watch 2</h5>
-                    <p class="card-text price"> $500.75 <span class="float-end rating-stars" >
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Akai Gx-4000d Pouco Uso 50x40x25 Cm 15kg (Usado)</h6>
+                    <h5 class="card-title">Gravador Fita Vintage</h5>
+                    <p class="card-text price"> R$1.640 <span class="float-end rating-stars" >
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                     </span> </p>
                     <div class="text-center">
-                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                        <a class="btn btn-dark w-100" href="https://www.mercadolivre.com.br/gravador-fita-vintage-akai-gx4000d-pouco-uso/up/MLBU3667286620?pdp_filters=item_id%3AMLB4353301799" target="_blank" role="button"> Abrir Anúncio Mercado Livre</a>
                       </div>
                   </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            <div class="col-xl-4 col-lg-4 col-md-6 position-relative">
               
                 <div class="card product-item">
                   <i class="bi bi-heart-fill position-absolute liked"></i>
                    <i class="bi bi-heart position-absolute like"></i>
-                  <img src="images/product-4-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <img src="images/fita_audio.jpg" style="height: 300px;" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Camera</h6>
-                    <h5 class="card-title">Canon WM-5</h5>
-                    <p class="card-text price"> $300.75 <span class="float-end rating-stars" >
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Fita Áudio Mastering Tape 3m Super Oferta De Natal</h6>
+                    <h5 class="card-title">Fita Áudio Mastering</h5>
+                    <p class="card-text price"> R$380 <span class="float-end rating-stars" >
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                     </span> </p>
                     <div class="text-center">
-                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                        <a class="btn btn-dark w-100" href="https://www.mercadolivre.com.br/fita-audio-mastering-tape-3m-super-oferta-de-natal/up/MLBU3516667427?pdp_filters=item_id:MLB6023752054" target="_blank" role="button"> Abrir Anúncio Mercado Livre</a>
                       </div>
                   </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            <div class="col-xl-4 col-lg-4 col-md-6 position-relative">
               
                 <div class="card product-item">
                   <i class="bi bi-heart-fill position-absolute liked"></i>
                    <i class="bi bi-heart position-absolute like"></i>
-                  <img src="images/product-3-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <img src="images/fita_vintage.jpg" style="height: 300px;" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Mobile</h6>
-                    <h5 class="card-title">Apple IPhone 11</h5>
-                    <p class="card-text price"> $799.75 <span class="float-end rating-stars" >
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Cabo Balanciado 20awgx2 Kmp Ideal Estúdios,TVs,rádios, etc.</h6>
+                    <h5 class="card-title">Cabo Balanciado 20awgx2</h5>
+                    <p class="card-text price"> R$600 <span class="float-end rating-stars" >
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                     </span> </p>
                     <div class="text-center">
-                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                        <a class="btn btn-dark w-100" href="https://www.mercadolivre.com.br/cabo-balanciado-20awgx2--kmp-ideal-estudios-tvsradiosetc/up/MLBU3665758141?pdp_filters=item_id:MLB4357959265" target="_blank" role="button"> Abrir Anúncio Mercado Livre</a>
                       </div>
                   </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
+            <div class="col-xl-4 col-lg-4 col-md-6 position-relative">
      
                 <div class="card product-item">
                   <i class="bi bi-heart-fill position-absolute liked"></i>
                   <i class="bi bi-heart position-absolute like"></i>
-                  <img src="images/product-5-square.jpg"  onclick="goToProductDetails()" class="card-img-top" alt="...">
+                  <img src="images/fita_antiderrapante.jpg" style="width: 300px;" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Tablet</h6>
-                    <h5 class="card-title">iPad Pro</h5>
-                    <p class="card-text price"> $999.75 <span class="float-end rating-stars" >
+                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Fita Antiderrapante Safety Walk Neon 50mm X 5m</h6>
+                    <h5 class="card-title">Fita Antiderrapante Neon</h5>
+                    <p class="card-text price"> R$69 <span class="float-end rating-stars" >
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                     </span> </p>
                     <div class="text-center">
-                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
+                        <a class="btn btn-dark w-100" href="https://www.mercadolivre.com.br/fita-antiderrapante-safety-walk-neon-50mm-x-5m/p/MLB24842482?pdp_filters=item_id:MLB6034512670" target="_blank" role="button"> Abrir anúncio Mercado Livre</a>
                       </div>
                   </div>
                 </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 position-relative">
-
-                <div class="card product-item">
-                  <i class="bi bi-heart-fill position-absolute liked"></i>
-                  <i class="bi bi-heart position-absolute like"></i>
-                  <img src="images/product-6-square.jpg" onclick="goToProductDetails()" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted  fw-light ">Drones</h6>
-                    <h5 class="card-title">XT-5</h5>
-                    <p class="card-text price"> $1100.75 <span class="float-end rating-stars" >
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </span> </p>
-                    <div class="text-center">
-                        <a class="btn btn-dark w-100" onclick="showToast()" role="button"> Add To Cart</a>
-                      </div>
-                  </div>
-                </div>
-            </div>
-             
             
           </div>
     </div>
@@ -233,31 +197,29 @@
         <div class="container py-3">
             <div class="row d-flex footer-items">
                 <div class="col-lg-4">
-                    <h5>Categories</h5>
+                    <h5>Categorias</h5>
                     <ul>
-                        <li><a href="#">Watches</a></li>
-                        <li><a href="#">Mobiles</a></li>
-                        <li><a href="#">Tablets</a></li>
-                        <li><a href="#">Audio</a></li>
-                        <li><a href="#">Drones</a></li>
+                        <li><a href="#">Eletrônicos</a></li>
+                        <li><a href="#">Telecomunicações</a></li>
+                        <li><a href="#">Informática</a></li>
+                        <li><a href="#">Áudio</a></li>
+                        <li><a href="#">Acessórios</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                   <h5>Useful Links</h5>
+                   <h5>Links Úteis</h5>
                    <ul>
-                       <li><a href="#">Terms</a></li>
-                       <li><a href="#">Privacy</a></li>
-                       <li><a href="#">About us</a></li>
-                       <li><a href="#">Mission</a></li>
+                       <li><a href="#">Fale conosco</a></li>
+                       <li><a href="#">Rontektel Mercado Livre</a></li>
                    </ul>
                </div>
                <div class="col-lg-4">
-                   <h5>Get Updates</h5>
+                   
                    <div class="d-flex subscribe">
                        <input type="text" class="form-control">
-                       <button class="btn btn-warning">Subscribe</button>
+                       <button class="btn btn-warning">Inscreva</button>
                    </div>
-                   <div class="mt-2">
+                   <div class="mt-3">
                     <div class="btn-group me-2 social-icons" role="group" aria-label="First group">
                       <button type="button" class="btn btn-secondary mx-1 d-flex flex-column justify-content-center align-items-center">
                         <i class="bi bi-facebook"></i>
@@ -276,7 +238,7 @@
                </div>
            </div>
            <div class="row text-center">
-             <span>@coderdost</span>
+             <span>©2025- RONTEKTEL - Eletrônicos e Telecomunicações - Todos os direitos reservados</span>
            </div>
         </div>
      
@@ -288,7 +250,7 @@
       </div>
       <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
-    <!-- End of Toast -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

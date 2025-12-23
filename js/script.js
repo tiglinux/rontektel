@@ -9,6 +9,11 @@ function showToast(){
     toastList[0].show()
 }
 
+function openWindow(url){
+  window.open(url,"_blank");
+}
+
+
 // Enable Tooltip
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
