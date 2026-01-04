@@ -93,19 +93,26 @@
         <div class="row mb-5">
             <div class="col-lg-6 offset-lg-3">
                 <h2 class="text-center mb-4">Fale Conosco</h2>
-                <form action="send-email.php" method="POST">
+                <form action="contact-email.php" method="post">
                   
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Seu nome completo" required>
+                        <label for="contact-name" class="form-label">Nome</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome completo" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu email" required>
-              
+                        <label for="contact-email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Seu email" required>
+                    </div>
+                     <div class="mb-3">
+                        <label for="contact-tel" class="form-label">Telefone</label>
+                        <input type="tel" name="telefone" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
                     </div>
                     <div class="mb-3">
-                      <textarea name="message" id="message" class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
+                        <label for="contact-message" class="form-label">Mensagem</label>
+                        <style>
+                          #message { resize: none; }
+                        </style>
+                      <textarea name="message" name="message" id="message" class="form-control" rows="8" placeholder="Digite sua mensagem" required></textarea>
                     </div>
                     <div class="mb-3">
                       <button type="submit">Enviar</button>
