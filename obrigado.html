@@ -1,83 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rontektel - Eletrônicos e Telecomunicações</title>
     <link rel="stylesheet" href="css/style.css">
+    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!-- Preview in WhatsApp-->
-    <meta property="og:title" content="Rontektel - Eletrônicos e Telecomunicações" />
-    <meta property="og:description" content="Encontre os melhores produtos eletrônicos e de telecomunicações." />
-    <meta property="og:url" content="https://rontektel.vercel.app/" />
-    <meta property="og:image" content="https://rontektel.vercel.app/images/logo_semfundo.jpg" />
-    <meta property="og:type" content="website" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#050C1A',
-                        'primary-light': '#0D1B36',
-                        accent: '#FACC15',
-                        danger: '#EF4444',
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet"></head>
-<body class="flex flex-col min-h-screen justify-between">
-
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-nav">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-4 cursor-pointer group">
-                <div class="nav-logo">
-                    <img src="images/logo_semfundo.jpg" class="logo_marca">
-                </div>
-                <div class="flex flex-col">
-                    <span
-                        class="text-3xl font-black text-white leading-none tracking-tight group-hover:text-accent transition-colors">Rontektel</span>
-                    <span class="text-[11px] font-bold text-white uppercase tracking-[0.3em] mt-1 italic">Eletrônicos e Telecomunicações</span>
-                </div>
-            </a>
-
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center space-x-10 font-bold text-xs tracking-widest text-white">
-                <a href="index.html" class="nav-link font-black" id="nav-home">INÍCIO</a>
-                <a href="sobre.html" class="nav-link font-black hover:text-accent transition-colors">SOBRE NÓS</a>
-                <a href="contato.html"
-                    class="btn-premium px-10 py-3.5 rounded-full font-extrabold shadow-2xl text-primary scale-110">FALE CONOSCO</a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button class="lg:hidden text-2xl text-white p-2" onclick="toggleMenu()">
-                <i class="fas fa-bars-staggered"></i>
-            </button>
+</head>
+<body>
+ <body>
+    <nav class="nav-header navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="nav-logo" href="/">
+            <img src="images/logo_semfundo.jpg" class="w-100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/#products">Cameras</a></li>
+                  <li><a class="dropdown-item" href="/#products">Apple Gadgets</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/#products">Drones</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+    
+            <form class="d-flex search-form">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="left" title="Search for all products">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+           
+          </div> -->
         </div>
+      </nav>
+      <!-- End of Navigation -->
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu"
-            class="hidden lg:hidden bg-blue-950 fixed top-[73px] left-0 w-full h-screen z-40 p-10 flex flex-col space-y-8 animate-fade-in">
-            <a href="index.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Início</a>
-            <a href="sobre.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Sobre Nós</a>
-            <a href="pgr.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">PGR / Laudos</a>
-            <a href="normas.html" class="text-2xl font-bold text-white border-b border-white/10 pb-4">Normas e AVCB</a>
-            <a href="treinamentos.html"
-                class="text-2xl font-bold text-white border-b border-white/10 pb-4">Treinamentos</a>
-            <a href="aph-brigada.html" class="text-2xl font-bold text-accent border-b border-accent/30 pb-4">APH &
-                Brigada</a>
-            <a href="contato.html" class="btn-premium p-5 rounded-2xl font-black text-lg text-center font-black">Falar
-                Conosco</a>
-        </div>
-    </nav>
-
-    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
@@ -116,47 +88,41 @@
         </a>
       </div>
 
-    
-     <div class="container">
-          <div id="products" class="row">
-              <div class="container formulario">
+      <!-- End of Carousel -->
+    <div class="container formulario">
         <div class="row mb-5">
             <div class="col-lg-6 offset-lg-3">
-                <h2 class="text-center mb-4">Fale Conosco</h2>
-                <form action="https://formsubmit.co/rontektel2026@gmail.com" method="post">
-                  
-                    <div class="mb-3">
-                        <label for="contact-name" class="form-label">Nome</label>
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome completo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="contact-email" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Seu email" required>
-                    </div>
-                     <div class="mb-3">
-                        <label for="contact-tel" class="form-label">Telefone</label>
-                        <input type="tel" name="telefone" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="contact-message" class="form-label">Mensagem</label>
-                        <style>
-                          #message { resize: none; }
-                        </style>
-                      <textarea name="message" name="message" id="message" class="form-control" rows="8" placeholder="Digite sua mensagem" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                      <button type="submit">Enviar</button>
-                    </div>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://127.0.0.1:5500/obrigado.html">
+                <h2 class="text-center mb-4">Obrigado pelo o Contato!</h2>
+                <p class="text-center">Entraremos em breve em contato!</p>
+
+                <div class="text-center mt-4">
+                    <p>Você será redirecionado para a página inicial em <span id="redirect-count">5</span> segundos.</p>
+                    <a href="/" class="btn btn-primary" style="background-color: #FFE600; color: black;">Ir agora</a>
+                </div>
+
+                <script>
+                (function(){
+                    var seconds = 5;
+                    var el = document.getElementById('redirect-count');
+                    var t = setInterval(function(){
+                        seconds--;
+                        if (el) el.textContent = seconds;
+                        if (seconds <= 0) {
+                            clearInterval(t);
+                            window.location.href = '/';
+                        }
+                    }, 1000);
+                })();
+                </script>
+
+                <noscript>
+                    <p class="text-center">JavaScript está desativado. <a href="/">Clique aqui</a> para ir à página inicial.</p>
+                </noscript>
+                
                 </form>
           </div>
     </div>
-          </div>
 
-            
-          </div>
-    </div>
     <style>
         .formulario {
           display: block;
@@ -169,14 +135,13 @@
         }
     </style>
 
-    <!-- Footer -->
+    </div>
     <div class="footer mt-auto bg-dark text-light">
         <div class="container py-3">
             <div class="row d-flex footer-items">
                 <div class="col-lg-4">
                     <h5>Categorias</h5>
                     <ul>
-                      <li><a href="index.html">Home</a></li>
                         <li><a href="#">Eletrônicos</a></li>
                         <li><a href="#">Telecomunicações</a></li>
                         <li><a href="#">Informática</a></li>
@@ -187,7 +152,7 @@
                 <div class="col-lg-4">
                    <h5>Links Úteis</h5>
                    <ul>
-                       <li><a class="nav-link" href="contato.html">Fale conosco</a></li>
+                       <li><a class="nav-link" href="./contato.html">Fale conosco</a></li>
                        <li><a href="#">Rontektel Mercado Livre</a></li>
                    </ul>
                </div>
@@ -224,14 +189,34 @@
         </div>
      
     </div>
+    <!-- End of Footer -->
+    <div class="toast d-flex align-items-center text-white bg-primary border-0 position-fixed" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        Item is successfully added to your cart.
+      </div>
+      <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/5519996635326" target="_blank"
-        class="fixed bottom-10 right-10 bg-green-500 text-white w-24 h-24 rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(34,197,94,0.6)] flex items-center justify-center text-4xl hover:bg-green-600 transition-all transform hover:scale-110 z-50 group border-4 border-white">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/app.js"></script>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You will need to Login of Check your account.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a type="button" href="login.html" class="btn btn-primary">Go To Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+    <script src="js/script.js"></script>
 </body>
 </html>
